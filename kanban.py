@@ -495,11 +495,12 @@ st.set_page_config(page_title="电量数据看板", layout="wide", initial_sideb
 
 # -------------------------- 相对路径配置 --------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
-FILE_ELEC = os.path.join(BASE_DIR, "月电量.xlsx")
-FILE_PRICE = os.path.join(BASE_DIR, "市场均价.xlsx")
-FILE_GRID_PRICE = os.path.join(BASE_DIR, "国网代购.xlsx")
-FILE_DAY_ELEC = os.path.join(BASE_DIR, "2026日用电量.xlsx")
+FILE_ELEC = os.path.join(DATA_DIR, "月电量.xlsx")
+FILE_PRICE = os.path.join(DATA_DIR, "市场均价.xlsx")
+FILE_GRID_PRICE = os.path.join(DATA_DIR, "国网代购.xlsx")
+FILE_DAY_ELEC = os.path.join(DATA_DIR, "2026日用电量.xlsx")
 
 # ---------- 日期选择器汉化 ----------
 st.markdown("""
